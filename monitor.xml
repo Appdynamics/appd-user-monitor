@@ -1,0 +1,20 @@
+<monitor>
+    <name>AppDynamics User Monitor</name>
+    <type>managed</type>
+    <enabled>true</enabled>
+    <description>Monitor logged in user status</description>
+    <monitor-configuration></monitor-configuration>
+    <monitor-run-task>
+        <execution-style>periodic</execution-style> 
+        <execution-frequency-in-seconds>60</execution-frequency-in-seconds> 
+        <execution-timeout-in-secs>300</execution-timeout-in-secs>
+        <name>AppDynamicsUserMonitor</name>
+        <type>executable</type>
+        <task-arguments>
+        </task-arguments>
+        <executable-task>
+            <type>file</type>
+            <file os-type="windows">appdusermon.bat</file>
+        </executable-task>
+    </monitor-run-task>
+</monitor>
