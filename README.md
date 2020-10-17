@@ -6,3 +6,4 @@ A simple AppDynamics extension that can return whether or not a user is logged i
 
 1. Unzip this directory into your `<machine agent>/monitors` directory.
 2. You may need to run `Unblock-File -Path ./AppdUserMon.ps1` due to Powershell and signatures.
+3. Update `monitor.xml` with the appropriate variables, and restart the Machine Agent!
