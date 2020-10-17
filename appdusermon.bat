@@ -1,2 +1,2 @@
 @echo off
-Powershell.exe -ExecutionPolicy remotesigned -File AppdUserMon.ps1
+Powershell.exe -ExecutionPolicy RemoteSigned -File AppdUserMon.ps1
