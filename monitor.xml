@@ -12,6 +12,11 @@
         <type>executable</type>
         <task-arguments>
         </task-arguments>
+        <variables>
+            <tierId>testTier</tierId>
+            <machineName>testMachine01</machineName>
+            <userName>TestUser</userName>
+        </variables>
         <executable-task>
             <type>file</type>
             <file os-type="windows">appdusermon.bat</file>
