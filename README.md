@@ -2,6 +2,8 @@
 
 A simple AppDynamics extension that can return whether or not a user is logged in on a given machine with a machine agent.
 
+![](https://raw.githubusercontent.com/dustinmoorman/appd-user-monitor/main/img/appd-metrics-browser-for-readme.png)
+
 ## Installation
 
 1. Unzip this directory into your `<machine agent>/monitors` directory.
