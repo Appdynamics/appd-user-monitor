@@ -2,8 +2,8 @@ Clear-Host
 
 $xml = [xml](Get-Content monitor.xml)
 
-$tierXmlNode = Select-Xml -Xml $xml -XPath "//monitor/monitor-run-task/variables/tierId" | Select-Object -ExpandProperty Node
-$tierId = $tierXmlNode.'#text'
+$componentXmlNode = Select-Xml -Xml $xml -XPath "//monitor/monitor-run-task/variables/componentId" | Select-Object -ExpandProperty Node
+$componentId = $componentXmlNode.'#text'
 
 $machineXmlNode = Select-Xml -Xml $xml -XPath "//monitor/monitor-run-task/variables/machineName" | Select-Object -ExpandProperty Node
 $machineName = $machineXmlNode.'#text'
@@ -11,7 +11,7 @@ $machineName = $machineXmlNode.'#text'
 $userXmlNode = Select-Xml -Xml $xml -XPath "//monitor/monitor-run-task/variables/userName" | Select-Object -ExpandProperty Node
 $userName = $userXmlNode.'#text'
 
-$metricPrefix = "name=Server|Component:$tierId|Custom Metrics|User Monitor|$machineName|$userName,"
+$metricPrefix = "name=Server|Component:$componentId|Custom Metrics|User Monitor|$machineName|$userName,"
 
 $loggedIn = "value=1"
 $notLoggedIn = "value=0"

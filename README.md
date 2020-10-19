@@ -10,6 +10,6 @@ A simple AppDynamics extension that can return whether or not a user is logged i
 
 ## Configuration Note
 
-One value you will need to set in the `monitor.xml` is the TierId.  To find this, open the dashboard for the tier and review the URL. The TierId appears as the component value in the URL.
+One value you will need to set in the `monitor.xml` is the componentId.  To find this, open the dashboard for the component and review the URL. The componentId appears as the component value in the URL.
 
 ![](https://docs.appdynamics.com/download/attachments/45488252/componentid.jpg?version=1&modificationDate=1589926629000&api=v2)
