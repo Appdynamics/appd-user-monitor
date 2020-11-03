@@ -13,7 +13,6 @@
         <task-arguments>
         </task-arguments>
         <variables>
-            <componentId>12345</componentId>
             <machineName>testMachine01</machineName>
             <userName>TestUser</userName>
         </variables>
